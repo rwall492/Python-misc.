@@ -1,0 +1,67 @@
+\documentclass[twoside,11pt, letter]{article}
+
+\setlength{\textheight}{23cm}
+\setlength{\textwidth}{17cm}
+\setlength{\topmargin}{0.0cm}
+%\setlength{\bottommargin}{1.0cm}
+\setlength{\oddsidemargin}{-0.2cm}
+\setlength{\evensidemargin}{-0.2cm}
+%----------------------------
+%Remove a lot of white space:
+%\setlength{\textfloatsep}{1cm}
+\setlength{\textfloatsep}{1ex plus 2.0pt minus 2.0pt}
+\setlength{\floatsep}{1ex plus 2.0pt minus 2.0pt}
+\setlength{\intextsep}{1ex plus 2.0pt minus 2.0pt}
+\setlength{\abovecaptionskip}{1ex}
+\setlength{\belowcaptionskip}{0pt}
+
+%\include{typelayout}
+%----------------------------
+
+\headsep = 8pt
+\usepackage{graphicx}
+\graphicspath{{./}{figures/}}
+\usepackage{color}
+%\usepackage{here}
+\usepackage{amsmath,amsfonts}
+\usepackage{mathptmx}
+\usepackage{bm} 
+\usepackage{enumerate}
+%\usepackage{floatflt}
+\usepackage{wrapfig} %similar to floatflt, but couldn't find reduction of
+                     %horiz. spacing for floatflt.
+\usepackage{longtable}
+
+% By default, LaTeX doesn't like to fill more than 0.7 of a text page with tables
+% and graphics, nor does it like too many figures per page. 
+\renewcommand{\floatpagefraction}{0.9}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\newcommand{\1}[1]{\, \mathrm{#1}} % unit(y ;-)
+
+\setcounter{totalnumber}{50}
+\setcounter{topnumber}{50}
+\setcounter{bottomnumber}{50}
+
+\setlength{\columnsep}{3ex}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead[\fancyplain{}{}]{\fancyplain{}{\slshape \rightmark}}
+\rhead[\fancyplain{}{\slshape \nouppercase{\leftmark}}]{\fancyplain{}{}}
+\cfoot{\thepage}
+%\renewcommand{\headrulewidth}{0.4pt}
+
+\setlength{\headheight}{14pt}
+
+\bibliographystyle{myamsplain}
+%\bibliographystyle{melga_unsrt}
+
+\begin{document}
+
+\pagestyle{fancy}
+%\setcounter{page}{1}
+blah blah blah
+
+\end{document}
