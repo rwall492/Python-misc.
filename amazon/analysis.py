@@ -26,7 +26,7 @@ def makeSeries(documents):
     return series
 
 def makeSentimentVector(documents):
-    count = CountVectorizer(stop_words = 'english')
+    count = CountVectorizer(stop_words = 'english')#as written, this shouldn't matter, right?
     word_count = count.fit_transform(documents)
     words = count.get_feature_names()
 

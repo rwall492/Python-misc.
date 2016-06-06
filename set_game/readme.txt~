@@ -1,0 +1,19 @@
+1.) To run this code from the command line:
+    > python run.py n_cards file_name
+where n_cards is the number of cards per hand, and file_name is an input csv file that defines the deck.
+1a.) Input files are assumed to have one row per card, and one column per dimension the card can have.
+1b.) I used integers to represent the values that each dimension could have.  This makes things simpler to 
+parse, but could be generalized if string inputs are desired.
+1c.) If no file name is given, the code will randomly generate a deck of 36 cards (4 dimensions with 3
+values each).
+1d.) If n_cards is not specified, the code will use the same randomly generated deck and pick hands of 3 cards.
+1e.) Some basic input files I made by hand are included in the inputs/ directory.
+
+2.) run.py executes the code
+
+3.) classes.py defines the Card() and Hand() classes.
+3a.) The Hand() class has a function is_winner() which determines whether the hand satisfies the rules of Set.
+3b.) Both classes have debug modes to dump their contents for easier debugging.
+
+4.) Additional, basic tests of is_winner() can be done using methods defined in tests.py, but otherwise, this
+script is not needed.
